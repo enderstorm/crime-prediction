@@ -1,0 +1,65 @@
+Atribut Location obsahuje GPS suradnice miesta cinu.
+
+
+Predpsacovanie a vyber atributov
+
+Duplicitne atributy
+
+Identifikovali sme a odstranili nasledovne duplicitne atributy: Area ID, Crime Code, Weapon Used Code
+Atributy, ktore boli opisane ciselnym identifikatorom a zaroven slovne sme uprednostnili slovne pred ciselnymi, aby sme nemuseli spatna mapovat.
+
+Malopocetne atributy
+
+CHYBAJUCE HODNOTY
+
+Atribut Weapon Used Code a Weapon Description opisuje zbran, akou bol vykonany zlocin, a obsahuje iba 524 757 instancii. Preto sme tento atribut zahodili.
+Cross Street obsahuje iba 262 733 instancii a preto bol tento atribut zahodeny.
+
+Atribut Victim Sex predstavuje pohlavie obeti a obsahuje malo instancii typu X, preto sme ju zahodili.
+
+Atribut Victim Descent predstavuje povod obeti, malopocetne kategorie atributu sme zlucili do novej kategorie Other.
+
+Transformacia
+
+Atribut Time Occurred priblizny cas cinu vo formate "hmm". Pre lepsiu pracu s nim sme aplikovali diskretizaciu premennych bez ucitela (binning) na tento cas do vedierok podla intervalov nasledovne:
+night <2100, 500)
+morning <500, 1200)
+afternoon <1200, 1700)
+evening <1700, 2100)
+
+
+Nominalne atributy pre predikciu sme transformovali do k-1 binarnych atributov (dummy variables) pre ich klasifikaciu.
+
+
+
+Vyber atributov pre predikciu
+
+38> slidy z 2 preproccessing ppt
+t-test, wilconov rank sum test?
+spatna eliminacia?
+
+Transformacia:
+1. zovseobecnenie 
+cas hmm -> obdobie dna (obed, vecer...)
+ulica gps --nahradit--> zonou
+
+
+
+Problem mozeme rozdelit na 3 podproblemy:
+1. klasifikacia podla veku obete
+
+Pre predikciu pouzijeme nasledovne atributy: 
+
+2. klasifikacia podla povodu obete
+3. klasifikacia podla pohlavia obete
+
+
+
+
+
+
+
+
+
+
+
