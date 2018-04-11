@@ -1,0 +1,48 @@
+PIPELINE
+
+data cleansing -> dummy (one hot encoding) -> train & test -> pickle.dump train.xxx test.xxx
+pickle.load test.xxx & train.xxx -> pipeline -> results -> diagrams
+
+pipeline:
+	// - one hot encoding
+	- features selection
+	- classification
+	- cross validation
+
+
+DOKUMENT ULOHY:
+- zjednotit fonty
+- opravit referencie
+- abstract, keyword prelozit
+- opisat metody data mining/DM (co robia v skratke, preco pouzit)
+- opisat ze ideme predikovat kategoriu zlocinu
+
+
+- vek je regresia, nie klasifikacia :D
+- feature selection - existuje "lamany graf" ktory hovori o dolezitosti featur
+- decision trees = da sa pouzit aj na feature selection
+- incidence matrix/confusion matrix pre accuracy/crossvalidaciu?
+- zgrupit criminals malopocetne do Other, lebo unbalanced dataset,ale vyskusat bez zgrupenia, zgrupenia
+- zamerat sa na na 1-2 klasifikatory, pohrat sa s parametrami
+- zamerat sa iba na jednu ulohu (zhodli sme sa na Crime kategoria)
+
+
+Abstrakt a keywords po slovenksy,
+davat si pozor na referencie
+su tam problemy v texte (male velke pismena, atd)
+
+vybrat metody a ako funguje
+
+incidencna matica nie matica zmatenosti
+
+PCA nie na teste ale na traine
+
+normalizovat na trenovacej mnozine a rovnako to pouzit na testovacej
+
+feature selection – pomocou grafu zistit kde treba odrezat data
+
+z decision trees vieme dostat dolezitost features
+
+jedna uloha viac parametrov
+
+
