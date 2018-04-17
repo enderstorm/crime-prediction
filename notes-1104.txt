@@ -5,6 +5,7 @@ pickle.load test.xxx & train.xxx -> pipeline -> results -> diagrams
 
 pipeline:
 	// - one hot encoding
+	- ? split kedy, ak cross validacia???
 	- features selection
 	- classification
 	- cross validation
@@ -26,6 +27,8 @@ DOKUMENT ULOHY:
 - zamerat sa na na 1-2 klasifikatory, pohrat sa s parametrami
 - zamerat sa iba na jednu ulohu (zhodli sme sa na Crime kategoria)
 
+- zoscalovat VEK?????????
+
 
 Abstrakt a keywords po slovenksy,
 davat si pozor na referencie
@@ -35,7 +38,7 @@ vybrat metody a ako funguje
 
 incidencna matica nie matica zmatenosti
 
-PCA nie na teste ale na traine
+PCA nie na teste ale na traine ?????
 
 normalizovat na trenovacej mnozine a rovnako to pouzit na testovacej
 
