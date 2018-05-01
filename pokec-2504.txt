@@ -1,0 +1,5 @@
+= down sample
+= spojenie do rovnakych tried
+= confusion matrix ako ina metrika
+= random forest - ma potencial dat lepsie vysledky
+= 
